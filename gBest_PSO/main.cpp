@@ -60,8 +60,7 @@ vector<agent> agentVector;
 
 int main(int argc, const char * argv[]) {
     
-    ofstream myfile;
-    myfile.open ("Data.txt");
+    
     
     int num = 0;
     //initlize solution space
@@ -116,8 +115,7 @@ int main(int argc, const char * argv[]) {
         
         num++;
         
-       // myfile << fitness(gBest) << "\n" ;
-        myfile << num << "\n" ;
+   
         
       //  printf("fitness of iterationBest = %f\n", fitness(iterationBest));
        // printf("iteration fitness of gBest = %f\n", fitness(gBest));
@@ -149,7 +147,7 @@ int main(int argc, const char * argv[]) {
     printf("\n");
     printf("%d \n", num);
     
-    myfile.close();
+   
     
     return 0;
 }
