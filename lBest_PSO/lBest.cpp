@@ -59,8 +59,7 @@ vector<agent> agentVector;
 
 int main(int argc, const char * argv[]) {
     
-    ofstream myfile;
-    myfile.open ("Data.txt");
+    
     
     
     agent currentAgent;
@@ -161,8 +160,7 @@ int main(int argc, const char * argv[]) {
         }
 
         
-        myfile << fitness(gBest) << "\n" ;
-       // myfile << num << "\n" ;
+      
         
 
         
@@ -224,7 +222,7 @@ int main(int argc, const char * argv[]) {
     
     printf("\n%f\n", fitness(gBest));
     
-    myfile.close();
+    
 
     return 0;
 }
